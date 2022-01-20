@@ -14,6 +14,7 @@ export default function SideBar() {
     <li className="sidebarlistitem">Doggo Coin</li>
     <li className="sidebarlistitem">Etheruim</li>
     <li className="sidebarlistitem">some coin</li>
+    <li>hello</li>
     </ul>
     </div>
     <div className="sidebarItem">
