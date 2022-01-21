@@ -2,6 +2,14 @@
   padding-top: 5000px;
 }
 
+.writeImg {
+  margin-left: 150px;
+  width: 70vw;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .writeForm {
   position: relative;
 }
@@ -46,4 +54,8 @@
   color: white;
   background-color: teal;
   padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
 }
