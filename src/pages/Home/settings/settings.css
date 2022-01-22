@@ -4,6 +4,7 @@
 
 .settingsWrapper {
   flex: 9;
+  padding: 20px;
 }
 
 .settingsTitle {
@@ -18,9 +19,14 @@
 }
 
 .settingsDeleteTitle {
-  color: Ored;
+  color: red;
   font-size: 12px;
   cursor: pointer;
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
 }
 
 .settingsPP {
@@ -41,7 +47,7 @@
   height: 25px;
   border-radius: 50%;
   background-color: lightcoral;
-  color: Iwhite;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +61,7 @@
 }
 
 .settingsForm > input {
-  color: Ogray;
+  color: gray;
   margin: 10px 0;
   height: 30px;
   border: none;
@@ -67,7 +73,7 @@
   align-self: center;
   border: none;
   border-radius: 10px;
-  color: Iwhite;
+  color: white;
   background-color: teal;
   padding: 10px;
   margin-top: 20px;
