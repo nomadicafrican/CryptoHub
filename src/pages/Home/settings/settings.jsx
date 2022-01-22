@@ -1,3 +1,4 @@
+import "./settings.css"
 import SideBar from "../../../../src/components/sidebar/SideBar"
 
 export default function Settings () {
@@ -18,13 +19,12 @@ export default function Settings () {
                   <input type="file" id="fileInput" style={{display:"none"}} />     
             </div>
             <label>Username</label>
-            <input type="text" placeholder="S" />
-            <label>Username</label>
-            <input type="text" placeholder="S" />
-            <label>Username</label>
-            <input type="text" placeholder="S" />
-            <label>Username</label>
-            <input type="text" placeholder="S" />
+            <input type="text" placeholder="Johnny" />
+            <label>Email</label>
+            <input type="text" placeholder="johnny@gmail.com" />
+            <label>Password</label>
+            <input type="password" />
+            <button className="settingsSubmit">Update</button>
             </form>
 
 

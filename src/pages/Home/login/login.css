@@ -1,0 +1,6 @@
+.login {
+  height: calc(10ovh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
