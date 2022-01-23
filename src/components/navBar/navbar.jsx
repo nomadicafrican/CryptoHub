@@ -3,7 +3,7 @@ import "./navbar.css";
 
 export default function NavBar() {
   const user = true;
-  return <div class = 'top'>
+  return <div className = 'top'>
     <div className="topleft">
     <i className=" topIcon fab fa-facebook-square"></i>
     <i className=" topIcon fab fa-twitter-square"></i>
@@ -15,7 +15,7 @@ export default function NavBar() {
   <li className="toplistitem">
     <Link className="link" to="/">Home</Link>
   </li>
-  <li className="toplistitem"><Link className="link" to="/">Charts</Link></li>
+  <li className="toplistitem"><Link className="link" to="/market">Market</Link></li>
   <li className="toplistitem"><Link className="link" to="/write">Write</Link></li>
   <li className="toplistitem">
   {user && "Logout" }

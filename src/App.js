@@ -5,6 +5,8 @@ import Write from "./pages/Home/write/write";
 import Settings from "./pages/Home/settings/settings";
 import Login from "./pages/Home/login/login";
 import Register from "./pages/Home/register/register";
+import Market from './components/market/Market'
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 function App() {
@@ -21,15 +23,22 @@ function App() {
         <Route path="/write"> {user ? <Write /> : <Register />} </Route>
         <Route path="/settings"> {user ? <Settings /> : <Register />} </Route>
         <Route path="/post/:postId">
+          <Route path='/market'></Route>
           <SinglePage />
         </Route>
       </Switch>
+      
+        <Market />
+      
 
 
 
 
     </Router>
+    
   );
+  
 }
+
 
 export default App;
