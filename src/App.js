@@ -23,12 +23,12 @@ function App() {
         <Route path="/write"> {user ? <Write /> : <Register />} </Route>
         <Route path="/settings"> {user ? <Settings /> : <Register />} </Route>
         <Route path="/post/:postId">
-          <Route path='/market'></Route>
           <SinglePage />
         </Route>
+          <Route path='/market'> { <Market />} </Route> 
       </Switch>
       
-        <Market />
+       
       
 
 
