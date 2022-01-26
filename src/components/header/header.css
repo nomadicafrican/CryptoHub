@@ -1,29 +1,30 @@
 .header {
   margin-top: 60px;
 }
-.headertitles {
+
+.headerTitles {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Barlow", sans-serif;
+  font-family: "Lora", serif;
   color: #444;
 }
 
-.headertitlesm {
+.headerTitleSm {
   position: absolute;
   top: 18%;
   font-size: 20px;
 }
 
-.headertitlelg {
+.headerTitleLg {
   position: absolute;
   top: 20%;
   font-size: 100px;
 }
 
-.headerimg {
-  width: 100%;
-  height: 150%;
-  margin-top: 80px;
-  object-fit: cover;
+.headerImg{
+    width: 100%;
+    height: 450px;
+    margin-top: 80px;
+    object-fit: cover;
 }

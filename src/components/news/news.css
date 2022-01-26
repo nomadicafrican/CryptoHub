@@ -1,0 +1,25 @@
+
+.article-container {
+  display: flex;
+  justify-content: center;
+}
+
+.article-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #d7d7d7;
+  width: 900px;
+}
+.article-price {
+  width: 30em;
+
+}
+
+.article-volume {
+  width: 15em;
+  flex-wrap: wrap;
+
+}
