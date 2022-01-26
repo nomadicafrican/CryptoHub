@@ -6,6 +6,7 @@ import Settings from "./pages/Home/settings/settings";
 import Login from "./pages/Home/login/login";
 import Register from "./pages/Home/register/register";
 import Market from './components/market/Market'
+import News from "./components/news/News";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
@@ -27,7 +28,11 @@ function App() {
         </Route>
           <Route path='/market'> { <Market />} </Route> 
       </Switch>
-      
+      <Route path="/news">
+        {<News/>}
+        
+
+      </Route>
        
       
 
