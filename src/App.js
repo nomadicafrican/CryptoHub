@@ -32,7 +32,7 @@ function App() {
         {<News/>}
         
 
-      </Route>
+     </Route>
        
       
 
