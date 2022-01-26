@@ -57,8 +57,13 @@
   justify-content: center;
 }
 
-.sidebarIcon{
-    font-size: 16px;
-    margin-left: 10px;
-    cursor: pointer;
+.sidebarIcon {
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.crypic {
+  width: 20em;
+  height: 20em;
 }

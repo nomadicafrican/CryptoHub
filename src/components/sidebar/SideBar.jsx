@@ -16,18 +16,17 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
-        <img
-          src="https://i.pinimg.com/236x/1e/3f/58/1e3f587572a7a7b20bbf1828595a1786--holiday-party-themes-holiday-gift-guide.jpg"
+        <span className="sidebarTitle">ABOUT CryptoVault</span>
+        <img className="crypic"
+          src="https://ce-prod-ca-central-1-website-assets.s3.ca-central-1.amazonaws.com/blog/Digital-Vault.webp"
           alt=""
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
+          CryptoVault is a blog where you can write, research & search up your favourite trending cryptocurrencies. We ask you remain respectful and keep the content limited to the sphere of crypto. Have fun and TO THE MOON!
         </p>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">CATEGORIES</span>
+        <span className="sidebarTitle"></span>
         <ul className="sidebarList">
           {cats.map((c) => (
             <Link to={`/?cat=${c.name}`} className="link">
