@@ -2,8 +2,8 @@ import react, { useState, useEffect } from "react";
 import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
-import CoinList from "../CoinList";
-import Coin from "../Coin";
+import CoinList from "../coin/CoinList";
+import Coin from "../coin/Coin";
 import "../market/market.css";
 import { Spring } from 'react-spring'
 import Aos from 'aos';
@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 import Button from "@material-ui/core/Button"
 // import  useGetCryptosQuery  from '../../services/cryptoApi'
 
-function Market() {
+ export default function Market() {
   var axios = require("axios").default;
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
@@ -95,5 +95,3 @@ function Market() {
     </div>
   );
 }
-
-export default Market;

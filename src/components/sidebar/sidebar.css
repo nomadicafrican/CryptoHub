@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.sidebartitle {
+.sidebarTitle {
   margin: 10px;
   padding: 5px;
   width: 80%;
@@ -28,36 +28,42 @@
   line-height: 20px;
   text-align: center;
 }
-.sidebarimg {
+
+.sidebarItem > img {
   margin-top: 15px;
-  width: 500px;
-  height: 500px;
 }
 
-.sidebar > p {
+.sidebarItem > p {
   padding: 30px;
 }
 
-.sidebarlist {
+.sidebarList {
   list-style: none;
   margin-bottom: 30px;
 }
 
-.sidebarlistitem {
+.sidebarListItem {
   display: inline-block;
   width: 50%;
   margin-top: 15px;
   cursor: pointer;
 }
 
-.sidebarsocial {
+.sidebarSocial {
   margin-top: 15px;
   width: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .sidebarIcon {
   font-size: 16px;
   margin-left: 10px;
+  cursor: pointer;
+}
+
+.crypic {
+  width: 20em;
+  height: 20em;
 }
