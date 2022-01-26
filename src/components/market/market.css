@@ -8,7 +8,9 @@
   
   color: rgb(0, 0, 0);
 }
-
+.heading{
+  color: #2e00a1;
+}
 .coin-app {
   display: flex;
   flex-direction: column;
@@ -39,8 +41,8 @@
   border: none;
   background-image: linear-gradient(
     -225deg,
-    #ac32e4 0%,
-    #d34036 48%,
+    #4a80e4 0%,
+    #649bda 48%,
     #2e00a1 100%
   );
   color: #e2e2e2;
