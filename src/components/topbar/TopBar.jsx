@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./topbar.css";
+import News from "../news/News";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
@@ -26,13 +27,8 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
-              ABOUT
-            </Link>
-          </li>
-          <li className="topListItem">
-            <Link className="link" to="/">
-              CONTACT
+            <Link className="link" to="/news">
+              NEWS
             </Link>
           </li>
           <li className="topListItem">

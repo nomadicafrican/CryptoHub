@@ -8,7 +8,8 @@ import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
-import Market from "./components/market/Market";
+import Market from './components/market/Market'
+import News from "./components/news/News"
 
 function App() {
   const { user } = useContext(Context);
@@ -27,7 +28,22 @@ function App() {
         <Route path="/post/:postId">
           <Single />
         </Route>
+        <Route path="/news">
+          <News />
+        </Route>
+          <Route path='/market'> { <Market />} </Route> 
       </Switch>
+      <Route path="/news">
+        {<News/>}
+        
+
+     </Route>
+       
+      
+
+
+
+
     </Router>
   );
 }

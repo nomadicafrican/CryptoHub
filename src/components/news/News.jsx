@@ -38,7 +38,7 @@ function News() {
   }, [])
   
   
-  let articles = data.slice(0,10).map((article) => {
+  let articles = data.slice(0,15).map((article) => {
     return <Article articleData={article} key={article.id}></Article>
  })
   

@@ -4,12 +4,12 @@ export default function Header() {
   return (
     <div className="header">
       <div className="headerTitles">
-        <span className="headerTitleSm">React & Node</span>
-        <span className="headerTitleLg">Blog</span>
+        <span className="headerTitleSm">CryptoVault</span>
+        <span className="headerTitleLg"></span>
       </div>
       <img
         className="headerImg"
-        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        src="https://spectrum.ieee.org/media-library/illustration-of-bitcoin-and-other-types-of-cryptocurrency-floating-on-a-gold-background.jpg?id=25589877&width=1200&coordinates=0%2C31%2C0%2C32&height=600"
         alt=""
       />
     </div>
