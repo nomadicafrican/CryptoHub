@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import CoinList from "../coin/CoinList";
 import Coin from "../coin/Coin";
 import "../market/market.css";
+import { Spring } from 'react-spring'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import Button from "@material-ui/core/Button"
 // import  useGetCryptosQuery  from '../../services/cryptoApi'
 
  export default function Market() {
@@ -43,7 +47,7 @@ import "../market/market.css";
       .catch(function (error) {
         console.error(error);
       });
-  }, []);
+     Aos.init()  },  []);
   const handleChange = (e) => {
     setSearch(e.target.value);
   };
@@ -53,6 +57,7 @@ import "../market/market.css";
   const coins = data.map((coin) => {
     return <Coin coinData={coin} key={coin.uuid}></Coin>;
   });
+
   const searchCoins = filteredCoins.map((coin) => (
     <Coin coinData={coin} key={coin.uuid} />
   ));
@@ -69,12 +74,14 @@ import "../market/market.css";
   };
 
   return (
+   
     <div className="coin-app">
       <Title center="center" level={1} className="heading">
         Global Crypto Market
       </Title>
-      <div className="coin-search">
-        <h1 className="coin-text">Search a currency</h1>
+      <Button variant='cointained' color='secondary' >
+            Search
+          </Button>
         <form onSubmit={submitHandler}>
           <input
             className="coin-input"
@@ -83,7 +90,7 @@ import "../market/market.css";
             placeholder="Search"
           />
         </form>
-      </div>
+      
       {filteredCoins.length > 0 ? searchCoins : coins}
     </div>
   );

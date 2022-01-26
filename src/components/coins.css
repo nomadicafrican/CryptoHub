@@ -13,10 +13,6 @@
   width: 900px;
 }
 
-.coin-row:hover {
-  background-color: rgb(255, 248, 255);
-}
-
 .coin {
   display: flex;
   align-items: center;
@@ -57,11 +53,4 @@
 
 .coin-marketcap {
   width: 230px;
-}
-.red {
-  color: #f00606;
-}
-
-.green {
-  color: #11d811;
 }

@@ -1,19 +1,10 @@
 import './coins.css'
 import millify from 'millify';
-import { usEffect } from 'react'
-import { useEffect } from 'react';
-import Aos from 'aos'
-import 'aos/dist/aos.css';
-
 function Coin(props) {
-useEffect(() => {
-  Aos.init()
-})
  const marketCap = props.coinData?.marketCap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
  const price = millify(props.coinData.price)
   return (
-    <div data-aos="fade-up"
-    data-aos-duration="2000" className='coin-container'>
+    <div className='coin-container'>
     <div className='coin-row'>
       <div className='coin'>
         <img width="30%" src={props.coinData.iconUrl} alt='crypto' />
@@ -25,11 +16,11 @@ useEffect(() => {
         <p className='coin-volume'>${marketCap}</p>
         <p className='coin-change'>{props.coinData.change}%</p>
 
-        {props.coinData.change< 0 ? (
-          <p className='coin-percent red'>{props.coinData.change}%</p>
+        {/* {priceChange< 0 ? (
+          <p className='coin-percent red'>{priceChange}%</p>
         ) : (
-          <p className='coin-percent green'>{props.coinData.change}%</p>
-        )}
+          <p className='coin-percent green'>{priceChange}%</p>
+        )} */}
 
         
       </div>
