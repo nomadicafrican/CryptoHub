@@ -76,12 +76,15 @@ import Button from "@material-ui/core/Button"
   return (
    
     <div className="coin-app">
+          <img
+        className="headerImg"
+        src="https://spectrum.ieee.org/media-library/illustration-of-bitcoin-and-other-types-of-cryptocurrency-floating-on-a-gold-background.jpg?id=25589877&width=1200&coordinates=0%2C31%2C0%2C32&height=600"
+        alt=""
+      />
       <Title center="center" level={1} className="heading">
         Global Crypto Market
       </Title>
-      <Button variant='cointained' color='secondary' >
-            Search
-          </Button>
+     
         <form onSubmit={submitHandler}>
           <input
             className="coin-input"
@@ -90,6 +93,8 @@ import Button from "@material-ui/core/Button"
             placeholder="Search"
           />
         </form>
+         
+    
       
       {filteredCoins.length > 0 ? searchCoins : coins}
     </div>

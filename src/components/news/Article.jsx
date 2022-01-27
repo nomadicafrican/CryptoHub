@@ -4,24 +4,32 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Grid} from '@mui/material';
+import { Button, CardActionArea, CardActions, Grid, Box} from '@mui/material';
+
 
 
 export default function Article(props) {
   return (
-    <Grid container
-    direction="row"
-    justifyContent="center"
-    alignItems="center"item xs={8}>
+    // <div data-aos="fade-down-right"
+    // data-aos-duration="3000">
 
-    <Card sx={{ maxWidth: 345 }}>
+<div>
+         
+           
+       
+    <Grid marginTop={19}>
+
+    <Box p={3} sx={{ flexDirection: 'row' }}>
+   
+
+    <Card  sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           
           height="240"
-          
-          
           />
+          
+          
         <CardContent>
           <Typography gutterBottom variant="h6" component="div">
           {props.articleData.title}
@@ -37,12 +45,16 @@ export default function Article(props) {
         </Button>
       </CardActions>
     </Card>
+          
+          </Box>
           </Grid>
+
+</div>
   );
 }
 
 // function Article(props) {
-
+  
 
 
 //  return <div>

@@ -23,7 +23,7 @@ useEffect(() => {
       <div className='coin-data'>
         <p className='coin-price'>${millify(props.coinData.price)}</p>
         <p className='coin-volume'>${marketCap}</p>
-        <p className='coin-change'>{props.coinData.change}%</p>
+        {/* <p className='coin-change'>{props.coinData.change}%</p> */}
 
         {props.coinData.change< 0 ? (
           <p className='coin-percent red'>{props.coinData.change}%</p>
